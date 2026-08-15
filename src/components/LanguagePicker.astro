@@ -3,16 +3,10 @@ import { SUPPORTED_LOCALES } from "@/i18n/config";
 import {
   translateFor,
   getLocaleInfo,
-  stripBaseAndLocale,
   getRelativeLocalePath,
 } from "@/i18n/utils";
 
 const t = translateFor(Astro.currentLocale);
-
-const unLocalizedPathname = stripBaseAndLocale(
-  Astro.currentLocale,
-  Astro.url.pathname
-);
 ---
 
 <div class="relative">
@@ -50,7 +44,7 @@ const unLocalizedPathname = stripBaseAndLocale(
     {
       SUPPORTED_LOCALES.map(locale => (
         <a
-          href={getRelativeLocalePath(locale, unLocalizedPathname)}
+          href={getRelativeLocalePath(locale, "/")}
           class="block px-4 py-2 text-sm text-foreground transition-colors hover:bg-muted hover:text-accent"
           role="menuitem"
         >
