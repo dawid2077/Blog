@@ -1,4 +1,3 @@
-import IconBrandX from "@/assets/icons/IconBrandX.svg";
 import IconFacebook from "@/assets/icons/IconFacebook.svg";
 import IconGitHub from "@/assets/icons/IconGitHub.svg";
 import IconLinkedin from "@/assets/icons/IconLinkedin.svg";
@@ -21,25 +20,19 @@ interface Social {
 export const SOCIALS: Social[] = [
   {
     name: "Github",
-    href: "https://github.com/yousef8/astro-paper-i18n",
+    href: "https://github.com/dawid2077",
     linkTitle: (t: Translator) => t("socials.github"),
     icon: IconGitHub,
   },
   {
-    name: "X",
-    href: "https://x.com/username",
-    linkTitle: (t: Translator) => t("socials.x"),
-    icon: IconBrandX,
-  },
-  {
     name: "LinkedIn",
-    href: "https://www.linkedin.com/in/username/",
+    href: "https://linkedin.com/in/dawidmot",
     linkTitle: (t: Translator) => t("socials.linkedin"),
     icon: IconLinkedin,
   },
   {
     name: "Mail",
-    href: "mailto:yourmail@gmail.com",
+    href: "mailto:dawid.m.motloch@gmail.com",
     linkTitle: (t: Translator) => t("socials.mail"),
     icon: IconMail,
   },
@@ -58,12 +51,7 @@ export const SHARE_LINKS: Social[] = [
     linkTitle: (t: Translator) => t("sharePost.on", { media: "Facebook" }),
     icon: IconFacebook,
   },
-  {
-    name: "X",
-    href: "https://x.com/intent/post?url=",
-    linkTitle: (t: Translator) => t("sharePost.on", { media: "X" }),
-    icon: IconBrandX,
-  },
+
   {
     name: "Telegram",
     href: "https://t.me/share/url?url=",

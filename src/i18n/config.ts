@@ -1,7 +1,6 @@
 import type { I18nStrings } from "./types";
-import ARLocale from "./locales/ar";
 import ENLocale from "./locales/en";
-import CNLocale from "./locales/zh";
+import PLLocale from "./locales/pl";
 
 export type LocaleProfile = {
   name: string;
@@ -16,19 +15,13 @@ export type LocaleKey = keyof typeof localeToProfile;
 
 export const localeToProfile = {
   // locale key must be in lowercase
-  ar: {
-    name: "العربية", // Name presented in language picker
-    messages: ARLocale, // Locale translations
-    langTag: "ar-EG", // Extremly important used in localizing dates, numbers and sitemap,  only English alphabet and hyphen allowed
-    direction: "rtl", // UI layout direction
-    googleFontName: "Cairo", // For OG image generation, font must support 400 and 700 weights, write name as it should goes in a URL, words separated with '+' instead of spaces
-  },
-  zh: {
-    name: "中文",
-    messages: CNLocale,
-    langTag: "zh-CN",
+  pl: {
+    name: "Polski",
+    messages: PLLocale,
+    langTag: "pl-PL",
     direction: "ltr",
-    googleFontName: "Noto+Sans+SC",
+    googleFontName: "IBM+Plex+Mono",
+    default: true,
   },
   en: {
     name: "English",
@@ -36,7 +29,6 @@ export const localeToProfile = {
     langTag: "en-US",
     direction: "ltr",
     googleFontName: "IBM+Plex+Mono",
-    default: true,
   },
 } satisfies Record<string, LocaleProfile>;
 

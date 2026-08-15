@@ -74,7 +74,6 @@ const ENLocale: I18nStrings = {
   "socials.instagram": `${baseStrings["site.title"]} on Instagram`,
   "socials.linkedin": `${baseStrings["site.title"]} on LinkedIn`,
   "socials.mail": `Send an email to ${baseStrings["site.title"]}`,
-  "socials.x": `${baseStrings["site.title"]} on X`,
   "socials.twitch": `${baseStrings["site.title"]} on Twitch`,
   "socials.youtube": `${baseStrings["site.title"]} on Youtube`,
   "socials.whatsapp": `${baseStrings["site.title"]} on Whatsapp`,

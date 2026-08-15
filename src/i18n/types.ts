@@ -63,7 +63,6 @@ export interface I18nStrings {
   "socials.instagram": string;
   "socials.linkedin": string;
   "socials.mail": string;
-  "socials.x": string;
   "socials.twitch": string;
   "socials.youtube": string;
   "socials.whatsapp": string;
